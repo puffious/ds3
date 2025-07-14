@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.c": "c",
+        "*.py": "python"
+    },
+    "code-runner.enableAppInsights": false,
+    "code-runner.runInTerminal": true
+}
