@@ -11,7 +11,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"formulahendry.code-runner"
+				"formulahendry.code-runner",
+				"ms-vscode.cpptools-extension-pack"
 			]
 		}
 	}

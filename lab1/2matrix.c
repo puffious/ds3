@@ -27,13 +27,5 @@ int substractionOf(int m1[rowC][colC], int m2[rowC][colC]){
 }
 
 int multiplicationOf(int m1[rowC][colC], int m2[rowC][colC]){
-    
-    
-    
-}
-
-int something(){
-    if (something){
-        
-    }
+       
 }
