@@ -4,6 +4,16 @@
 	"name": "C++",
 	"build": {
 		"dockerfile": "Dockerfile"
+	},
+	"features": {
+		"ghcr.io/devcontainers-extra/features/mysql-homebrew:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"formulahendry.code-runner"
+			]
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
