@@ -4,5 +4,6 @@
         "*.py": "python"
     },
     "code-runner.enableAppInsights": false,
-    "code-runner.runInTerminal": true
+    "code-runner.runInTerminal": true,
+    "C_Cpp.errorSquiggles": "disabled"
 }
