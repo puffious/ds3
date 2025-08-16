@@ -25,11 +25,11 @@ int main(void){
     scanf("%d, %d", &a, &b);
 
     printf("Before Swap : %d, %d\n", a, b);
-    byvalue();
+    byValue();
     printf("After Swap (by value): %d, %d\n", a, b);
 
     printf("Before Swap: %d, %d\n", a, b);
-    byref(&a, &b);
+    byReference(&a, &b);
     printf("After Swap (by reference): %d, %d\n", a, b);
 
     return 0;
