@@ -1,14 +1,15 @@
 // Implement a stack using arrays and perform the following operations: Push, Pop, Peep, and Display.
 
 #include <stdio.h>
-#include<stdlib.h>
-int push(int value);
-int pop();
-int display();
-int peep();
+
 
 int top = 0;
 int stack[10];
+
+void push(int value);
+int pop();
+void display();
+int peep();
 
 int main(void) {
     int keepRunning = 1, choice = 0, temp = 0;
@@ -57,7 +58,7 @@ int main(void) {
     return 0;
 }
 
-int push(int value){
+void push(int value){
     stack[top] = value;
     top ++;
 }
@@ -68,14 +69,13 @@ int pop(){
         return stack[top];
     }
     else return 0;
-    
 }
 
 int peep(){
     return stack[top-1];
 }
 
-int display(){
+void display(){
     printf("stack: [");
     for (int i = 0; i < top; i++){
         printf("%d", stack[i]);

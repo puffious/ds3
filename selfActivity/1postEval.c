@@ -6,37 +6,53 @@
 #include <math.h>
 
 #define MAX 100
+
 int stack[MAX];
 int top = -1;
 
-void push(int c)
+int push(int c);
+int pop(void);
+int performoperation(int op1, int op2, char opr);
+int evaluatepostfix(char postfix[]);
+
+int main(void)
 {
-    if (top < MAX - 1)
-    {
+    char postfix[MAX];
+    printf("Postfix Expression: ");
+    scanf("%s", postfix);
+
+    int result = evaluatepostfix(postfix);
+    printf("\nEvaluated postfix expression is = %d\n", result);
+    
+    return 0;
+}
+
+int push(int c)
+{
+    if (top < MAX - 1){
         stack[++top] = c;
+        return 0;
     }
-    else
-    {
+    else{
         printf("Stack overflow\n");
+        return 1;
     }
 }
 
-int pop()
+int pop(void)
 {
-    if (top >= 0)
-    {
+    if (top >= 0){
         return stack[top--];
     }
-    else
-    {
-        return '\0';
+    else{
+        printf("Stack underflow\n");
+        return 0;
     }
 }
 
-int performOperation(int op1, int op2, char opr)
+int performoperation(int op1, int op2, char opr)
 {
-    switch (opr)
-    {
+    switch (opr){
     case '+':
         return op1 + op2;
     case '-':
@@ -53,38 +69,24 @@ int performOperation(int op1, int op2, char opr)
     }
 }
 
-int evaluatePostfix(char postfix[])
+int evaluatepostfix(char postfix[])
 {
-    int i, j = 0;
+    int i;
     char temp;
 
-    for (i = 0; postfix[i] != '\0'; i++)
-    {
+    for (i = 0; postfix[i] != '\0'; i++){
         temp = postfix[i];
 
         // If digit then push to stack
-        if (isdigit(temp))
-        {
+        if (isdigit(temp)){
             push(temp - '0');
         }
-        else
-        {
+        else{
             int op2 = pop();
             int op1 = pop();
-            int value = performOperation(op1, op2, temp);
+            int value = performoperation(op1, op2, temp);
             push(value);
         }
     }
     return pop();
-}
-int main()
-{
-    char postfix[MAX];
-
-    printf("Name: Tirth Rana 225BECEG002 \n");
-    printf("Enter Postfix Expression: ");
-    scanf("%s", postfix);
-
-    int result = evaluatePostfix(postfix);
-    printf("\nEvaluated postfix expression is : %d", result);
 }
