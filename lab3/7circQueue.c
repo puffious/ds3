@@ -1,5 +1,5 @@
 // Implement a circular queue using arrays and demonstrate its operations.
-// Write a program to implement a queue using arrays and perform Enqueue, Dequeue, and Display operations.
+
 #include <stdio.h>
 
 int size = 10;
