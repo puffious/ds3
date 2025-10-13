@@ -21,3 +21,5 @@
 | 2        | Stack using Linked List                             | [View Code](selfActivity/2stackLinkedList.c) |
 | 3        | Recursive Binary Tree Traversal                     | [View Code](selfActivity/3recBinaryTrav.c) |
 | 3        | Non-Recursive Binary Tree Traversal                 | [View Code](selfActivity/3nonrecBinaryTrav.c) |
+| 4        | Binary Search                                       | [View Code](selfActivity/4binarySearch.c) |
+| 5        | Sequential File Organization                        | [View Code](selfActivity/5seqFileOrg.c) |
