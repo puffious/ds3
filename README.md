@@ -15,11 +15,5 @@
 | 11               | Binary search tree (Create and Search)              | [View Code](lab4/11binarySearchTree.c) |
 
 | Activity | Description                                         | Code Link                              |
-|----------|-----------------------------------------------------|----------------------------------------|
-| 1        | Evaluate postfix using stack                        | [View Code](selfActivity/1postEval.c)  |
-| 2        | Queue using Linked List                             | [View Code](selfActivity/2queueLinkedList.c) |
-| 2        | Stack using Linked List                             | [View Code](selfActivity/2stackLinkedList.c) |
-| 3        | Recursive Binary Tree Traversal                     | [View Code](selfActivity/3recBinaryTrav.c) |
-| 3        | Non-Recursive Binary Tree Traversal                 | [View Code](selfActivity/3nonrecBinaryTrav.c) |
-| 4        | Binary Search                                       | [View Code](selfActivity/4binarySearch.c) |
-| 5        | Sequential File Organization                        | [View Code](selfActivity/5seqFileOrg.c) |
+|----------------------|-----------------------------------------------------|----------------------------------------|
+| 1                    | Evaluate postfix using stack                        | [View Code](selfActivity/1postEval.c)  |
