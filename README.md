@@ -13,6 +13,10 @@
 | 9                | Circular linked list operations                     | [View Code](lab3/9circLinkedList.c)    |
 | 10               | Doubly linked list operations                       | [View Code](lab4/10doublyLinkedList.c) |
 | 11               | Binary search tree (Create and Search)              | [View Code](lab4/11binarySearchTree.c) |
+| 12               | Graph using adjacency matrix and adjacency list     | [View Code](lab4/12graph.c)            |
+| 13               | Bubble Sort                                         | [View Code](lab5/13bubbleSort.c)       |
+| 14               | Quick Sort                                          | [View Code](lab5/14quickSort.c)        |
+| 15               | Insertion Sort                                      | [View Code](lab5/15insertionSort.c)    |
 
 | Activity | Description                                         | Code Link                              |
 |----------|-----------------------------------------------------|----------------------------------------|
